@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:text="@string/welcome_to"
+        android:textColor="@color/black"
+        android:textSize="@dimen/welcome_back_text_size"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/view_default_margin"
+        app:layout_constraintBottom_toTopOf="@+id/logoImageView" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="@dimen/android_logo_size"
+        android:layout_height="@dimen/android_logo_size"
+        app:srcCompat="@drawable/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tint="@color/colorPrimary"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/welcomeMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/android_slogan"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_extra_super_large"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/view_default_margin"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/text_view_bottom_container_margin"
+        android:layout_marginEnd="@dimen/input_layout_margin_edge"
+        android:layout_marginStart="@dimen/input_layout_margin_edge"
+        android:text="@string/create_account"
+        android:theme="@style/PrimaryButtonStyle"
+        app:layout_constraintBottom_toTopOf="@+id/loginTextLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:alpha="0"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:id="@+id/loginTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_default_margin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:alpha="0">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/logInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_log_in"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:padding="@dimen/clickable_text_view_extra_padding"
+            android:focusable="false"
+            android:enabled="false"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

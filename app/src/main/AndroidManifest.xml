@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atomico.uy.splashapp">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UberActivity"
+            android:theme="@style/UberTheme" />
+
+        <activity
+            android:name=".FacebookActivity"
+            android:theme="@style/FacebookTheme" />
+
+        <activity
+            android:name=".SimpleSplashActivity"
+            android:theme="@style/SimpleTheme" />
+
+        <activity
+            android:name=".Simple2SplashActivity"
+            android:theme="@style/SimpleTheme" />
+
+        <activity
+            android:name=".Simple3SplashActivity"
+            android:theme="@style/SimpleTheme" />
+
+        <activity
+            android:name=".Splash1Activity"
+            android:theme="@style/Splash1Theme" />
+
+    </application>
+
+</manifest>

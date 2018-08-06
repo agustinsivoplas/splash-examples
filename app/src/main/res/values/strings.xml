@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SplashApp</string>
+    <string name="title_activity_uber">UberActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="reveal_uber">Reveal Uber</string>
+    <string name="facebook">Facebook</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="simple">Simple</string>
+    <string name="simple_2">Simple 2</string>
+    <string name="simple_3">Simple 3</string>
+    <string name="splash_1">Splash 1</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="android_slogan">Be together, not the same.</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="title_activity_log_in">Log In</string>
+</resources>
